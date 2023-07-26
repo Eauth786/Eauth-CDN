@@ -1,0 +1,130 @@
+* {
+    animation-name: up-to-down;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    transition-duration: 0.4s;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@keyframes up-to-down {
+    /* Up to down Animation. */
+
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+#home {
+    text-align: center;
+    margin-top: 180px;
+    margin-bottom: 360px;
+}
+
+#home h1 {
+    font-weight: 700;
+    color: #fff;
+    font-size: 48px;
+}
+
+#home p {
+    color: #9BA1A6;
+    font-size: 20px;
+}
+
+#about, #faqs, #pricing{
+    background-color: #111417;
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+#about img {
+    width: 100%;
+    margin-bottom: -50%;
+}
+
+.about-header {
+    font-weight: 700;
+    color: #fff;
+    font-size: 36px;
+}
+
+#about p {
+    color: #9BA1A6;
+    font-size: 18px;
+}
+
+.card-title {
+    color: #fff;
+    font-weight: 800;
+}
+
+.card-icon {
+    margin-bottom: -20px;
+    color: #1890ff;
+}
+
+.noback .card {
+    background-color: inherit;
+    border-width: 0px;
+}
+
+.nav-item {
+    font-size: 16px;
+}
+
+.fa-check {
+    color: #1890ff;
+}
+
+.fa-times {
+    color: #ed586c;
+}
+
+li {
+    list-style: none;
+}
+
+#contacts{
+    text-align: center;
+    padding-bottom: 35px;
+}
+
+.overlay-left {
+    position: absolute;
+    width: 543px;
+    height: 543px;
+    left: -305px;
+    top: 89px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(8, 70, 186, 0.45) 0%, rgba(8, 85, 186, 0.15) 64.58%, rgba(8, 135, 186, 0) 100%);
+}
+
+.overlay-right {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 43%;
+    top: -300px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(8, 70, 186, 0.45) 0%, rgba(8, 85, 186, 0.15) 64.58%, rgba(8, 135, 186, 0) 100%);
+}
+
+.overlay-top {
+    position: absolute;
+    width: 376px;
+    height: 405px;
+    left: -250px;
+    top: -2px;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(8, 70, 186, 0.45) 0%, rgba(8, 85, 186, 0.15) 64.58%, rgba(8, 135, 186, 0) 100%);
+}
+
+.sidebar-link {
+    cursor: pointer;
+}
