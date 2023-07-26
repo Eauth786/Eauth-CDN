@@ -128,3 +128,7 @@ li {
 .sidebar-link {
     cursor: pointer;
 }
+
+.table td, .table th {
+  font-size: 14px;
+}
