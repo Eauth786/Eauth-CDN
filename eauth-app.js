@@ -1,3 +1,6 @@
+var currentYear = new Date().getFullYear();
+  document.getElementById("year").textContent = currentYear;
+
 // Get all buttons
       const buttons = document.querySelectorAll('.tab-nav');
 
@@ -105,9 +108,6 @@
       customInput.readOnly = false;
     }
   });
-  
-    var currentYear = new Date().getFullYear();
-  document.getElementById("year").textContent = currentYear;
       
       window.onload = function() {
         var shownDiv = localStorage.getItem("shownDiv");
