@@ -1,8 +1,8 @@
 * {
     animation-name: up-to-down;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-fill-mode: both;
-    transition-duration: 0.4s;
+    transition-duration: 0.3s;
     box-sizing: border-box;
 }
 
