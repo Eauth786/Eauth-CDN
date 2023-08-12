@@ -108,16 +108,60 @@ var currentYear = new Date().getFullYear();
       customInput.readOnly = false;
     }
   });
+
+function confirmButton(buttonName, buttonValue, buttonText, titleText) {
+            document.getElementById("confirmAlertTitle").innerHTML = titleText;
+            
+            if (buttonValue == '') {
+                var icon = 'fa-refresh';
+            }
+            else {
+                var icon = 'fa-trash-o'
+            }
+            var confirmButton = document.getElementById("confirmButton");
+            confirmButton.setAttribute("name", buttonName);
+            confirmButton.setAttribute("value", buttonValue);
+            confirmButton.innerHTML = '<i class="fa '+icon+'" aria-hidden="true"></i> ' + buttonText;
+        }
+        
+        function changeKeyType() {
+  const select = document.getElementById("selectKeyType");
+  
+  const userCustomKey_label = document.getElementById("userCustomKey_label");
+  const userCustomKey = document.getElementById("input_Customkey");
+  
+  const keyLength_label = document.getElementById("keyLength-label");
+  const input_length = document.getElementById("input-length");
+  const keyQuantity = document.getElementById("keyQuantity-label");
+  const input_quantity = document.getElementById("input-quantity");
+
+  if (select.value === "random") {
       
-      window.onload = function() {
-        var shownDiv = localStorage.getItem("shownDiv");
-        if (shownDiv) {
-            showDiv(shownDiv);
-            // Add "active" class to button that corresponds to shown div
-            var button = document.getElementById(shownDiv);
-        }
-        else {
-            var button = document.getElementById('manage-apps');
-        }
-        button.classList.add("active");
-      };
+    keyLength_label.style.display = "block";
+    input_length.style.display = "block";
+    keyQuantity.style.display = "block";
+    input_quantity.style.display = "block";
+    
+    userCustomKey_label.style.display = "none";
+    userCustomKey.style.display = "none";
+    userCustomKey.value = "";
+    
+  } else if (select.value === "custom") {
+      
+    keyLength_label.style.display = "none";
+    input_length.style.display = "none";
+    keyQuantity.style.display = "none";
+    input_quantity.style.display = "none";
+    
+    userCustomKey_label.style.display = "block";
+    userCustomKey.style.display = "block";
+    
+  }
+}
+const urlParams = new URLSearchParams(window.location.search);
+const tab = urlParams.get('tab');
+
+// Check if 'tab' exists
+if (tab) {
+    showDiv(tab);
+}
