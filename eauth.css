@@ -1,9 +1,6 @@
 * {
     animation-name: up-to-down;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    transition-duration: 0.3s;
-    box-sizing: border-box;
+    animation-duration: .9s;
 }
 
 html {
