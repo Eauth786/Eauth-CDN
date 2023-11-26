@@ -1,6 +1,7 @@
 * {
     animation-name: up-to-down;
     animation-duration: .9s;
+    animation-fill-mode: both;
 }
 
 html {
