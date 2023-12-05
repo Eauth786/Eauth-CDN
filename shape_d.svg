@@ -1,7 +1,0 @@
-<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="900" height="600">
-	<title>shape-svg</title>
-	<style>
-		.s0 { fill: #111417 } 
-	</style>
-	<path id="Layer" class="s0" d="m0 41l75 10.7c75 10.6 225 32 375 32.6 150 0.7 300-19.3 375-29.3l75-10v-45h-75c-75 0-225 0-375 0-150 0-300 0-375 0h-75z"/>
-</svg>
