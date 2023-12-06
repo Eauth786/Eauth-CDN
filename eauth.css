@@ -1,7 +1,6 @@
 * {
     animation-name: up-to-down;
     animation-duration: .9s;
-    animation-fill-mode: both;
 }
 
 html {
@@ -110,7 +109,7 @@ li {
     width: 250px;
     height: 250px;
     left: 43%;
-    top: -265px;
+    top: -150px;
     background: radial-gradient(50% 50% at 50% 50%, rgba(8, 70, 186, 0.45) 0%, rgba(8, 85, 186, 0.15) 64.58%, rgba(8, 135, 186, 0) 100%);
 }
 
@@ -119,7 +118,6 @@ li {
     width: 376px;
     height: 405px;
     left: -250px;
-    top: -2px;
     background: radial-gradient(50% 50% at 50% 50%, rgba(8, 70, 186, 0.45) 0%, rgba(8, 85, 186, 0.15) 64.58%, rgba(8, 135, 186, 0) 100%);
 }
 
